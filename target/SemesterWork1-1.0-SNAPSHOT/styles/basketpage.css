@@ -1,0 +1,57 @@
+table {
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    height: 50%;
+    border-collapse: collapse;
+}
+table thead tr {
+    color: #ffffff;
+    font-weight: bold;
+    background: #000000;
+}
+table thead tr td {
+    border: 1px solid #959595;
+}
+table tbody tr td {
+    border: 1px solid #e8e9eb;
+}
+
+table tbody tr:hover {
+    background: #e5d5d5;
+}
+
+.table-name {
+    width: 55%;
+    height: 40px;
+}
+.table-count {
+    width: 10%;
+    height: 40px;
+    text-align: center;
+}
+.table-price {
+    width: 20%;
+    height: 40px;
+    text-align: center;
+}
+.delete {
+    color: darkred;
+    margin-left: 10px;
+}
+
+.buy_btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #008757;
+    border: solid 2px #008757;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.buy_btn:hover {
+    background: #008757;
+    color: white;
+}

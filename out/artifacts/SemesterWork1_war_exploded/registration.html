@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Album Store</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
+    <link rel="icon" type="image/svg" href="assets/icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="registration.js"></script>
+</head>
+<body>
+<style>
+    body {
+        background: #171515 url(assets/background.jpg); /* Цвет фона и путь к файлу */
+        color: #FFFFFF; /* Цвет текста */
+    }
+</style>
+    <div class="login">
+    <h1>Регистрация</h1>
+    <form method="post" action="/registration">
+        <label><input class="loginField" id="username" type="text" name="username" placeholder="Логин" onblur="checkAll();"></label>
+        <p class="error" id="username-error" style="display: none; color: white">Логин уже занят</p>
+        <p class="error" id="username-size-error" style="display: none; color: white">Логин должен содержать только латинские буквы, цифры дефисы и подчеркивания, быть больше 3 и меньше 16</p>
+        <label><input class="loginField" id="password" type="password" name="password" placeholder="Пароль" onblur="checkAll();"></label><br>
+        <label><input class="loginField" id="secondPass" type="password" name="secondPass" placeholder="Пароль повторно" onblur="checkAll();"></label><br>
+        <p class="error" id="password-error" style="display: none; color: white">Пароли не совпадают или пароль слишком простой. <br> Пароль должен содержать минимум 6 символов и 1 цифру и содежрать только латинсике буквы</p>
+        <label><input class="remember" name="remember" type="checkbox" value="check">Запомнить меня?</label><br>
+        <button id="lgn" class="btn" disabled>Зарегистрироваться</button>
+        <div style="text-align: center;">
+            <a class='loginText' href="/login">Войти!</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
